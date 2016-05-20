@@ -13,31 +13,41 @@ p{
 	text-align: justify;
 }
 
-h2 {
+h1 {
     width: 100%;
-    margin: 0;
+    margin: 40px 10px;
     padding: 0;
     text-align: center;
 }
 
-h2:after {
+h1:after {
     display: inline-block;
     margin: 0 0 8px 20px;
     height: 3px;
     content: " ";
     text-shadow: none;
-    background-color: #999;
-    width: 140px;
+
+	background: #00802b; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #00802b, #5fdd62, #00802b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #00802b, #5fdd62, #00802b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #00802b, #5fdd62, #00802b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #00802b, #5fdd62, #00802b); /* Standard syntax */
+	
+    width: 200px;
 }
 
-h2:before {
+h1:before {
     display: inline-block;
     margin: 0 20px 8px 0;
     height: 3px;
     content: " ";
     text-shadow: none;
-    background-color: #999;
-    width: 140px;
+	background: #00802b; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #00802b, #5fdd62, #00802b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #00802b, #5fdd62, #00802b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #00802b, #5fdd62, #00802b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #00802b, #5fdd62, #00802b); /* Standard syntax */
+    width: 200px;
 }
 
 h3 {
@@ -75,24 +85,36 @@ h3 {
 }
 
 div.transbox {
-/*  width: 100%; */
-  background-color: #000;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+	width: 50%;
+	margin: 15px auto 30px;
+	background-color: #000;
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 .bottomleft {
-    position: absolute;
+/*    position: absolute;
     bottom: 10px;
 	left: 25px;
-	right: 25px;
+	right: 25px;*/
 }
 
 .img-list{
 	list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 3px;
     overflow: hidden;
+    display:table;
+	
+}
+
+.img-list li{
+	text-align: center;	
+}
+
+.on-color{
+	color: #5fdd62;
+	font-weight: bold;
 }
 
 .li-hor{
